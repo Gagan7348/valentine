@@ -1,2 +1,51 @@
-/* Valentine styles */
-/* ...existing code... */
+body {
+	background: #ffe6e6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+
+.valentine-container {
+	text-align: center;
+}
+
+.heart {
+	width: 100px;
+	height: 90px;
+	background: red;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 20px;
+	transform: scale(1.2);
+}
+.heart:before,
+.heart:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100px;
+	height: 90px;
+	background: red;
+	border-radius: 50px 50px 0 0;
+}
+.heart:before {
+	left: -50px;
+}
+.heart:after {
+	left: 50px;
+}
+
+h1 {
+	color: #d10000;
+	font-family: 'Segoe Script', cursive;
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+.message {
+	color: #333;
+	font-size: 1.2em;
+	font-family: 'Segoe UI', sans-serif;
+}
