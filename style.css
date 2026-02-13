@@ -1,43 +1,52 @@
 body {
 	background: #ffe6e6;
+	margin: 0;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	margin: 0;
 }
 
 .valentine-container {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
 }
 
 .heart {
-	width: 100px;
-	height: 90px;
-	background: red;
 	position: relative;
-	display: inline-block;
+	width: 120px;
+	height: 108px;
 	margin-bottom: 20px;
-	transform: scale(1.2);
 }
 .heart:before,
 .heart:after {
 	content: "";
 	position: absolute;
 	top: 0;
-	width: 100px;
-	height: 90px;
-	background: red;
-	border-radius: 50px 50px 0 0;
+	width: 60px;
+	height: 96px;
+	background: #d10000;
+	border-radius: 60px 60px 0 0;
 }
 .heart:before {
-	left: -50px;
+	left: 0;
 }
 .heart:after {
-	left: 50px;
+	right: 0;
+}
+.heart {
+	background: #d10000;
+	transform: rotate(-45deg);
+	left: 30px;
+	top: 12px;
+	border-radius: 0 0 60px 60px;
 }
 
-h1 {
+
 	color: #d10000;
 	font-family: 'Segoe Script', cursive;
 	font-size: 2.5em;
